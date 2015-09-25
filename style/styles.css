@@ -21,7 +21,7 @@ input[type=submit]             { cursor:pointer; }
 img, fieldset                  { border:0; }
 img                            { vertical-align: top; }
 table                          { border-collapse:collapse; border-spacing:0; }
-a:link, a:visited              { font:12px Tahoma, sans-serif; color:#000; text-decoration:underline; }
+a:link, a:visited              { font:12px Tahoma, sans-serif; color:#000; text-decoration:none; }
 a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
@@ -62,15 +62,80 @@ a:hover                        { text-decoration:none; }
 .container{
 	width: 1170px;
 	margin: 0 auto;
+	padding: 24px 0 22px;
+	overflow: hidden;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.navbar{
+	position: fixed;
+	background: #2f4050;
+	padding: 24px 0 22px;
+}
 
+.main-logo{
+	float: left;
+	width: 158px;
+	height: 33px;
+	overflow: hidden;
+}
+
+.main-nav{
+	overflow: hidden;
+	text-align: center;
+}
+
+.main-nav li{
+	display: inline-block;
+}
+
+.main-nav a{
+	padding: 0 18px;
+	color: #fff;
+}
+
+.main-nav a:hover{
+	color: #fcb539;
+}
+
+.autorization{
+	float: right;
+}
+
+.autorization ul{
+	border:1px solid #fff;
+	border-radius: 4px;
+	padding: 5px 20px;
+}
+
+.autorization li{
+	display: inline-block;
+	color:#fff;
+}
+
+.autorization li a{
+	color: #fff;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.content{
+	padding: 70px;
+}
 
+.post{
+	overflow: hidden;
+	padding: 110px 0;
+}
+ 
+.post-content{
+	width: 70%;
+}
+
+.post-icon{
+	width: 30%;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
