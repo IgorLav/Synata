@@ -21,7 +21,7 @@ input[type=submit]             { cursor:pointer; }
 img, fieldset                  { border:0; }
 img                            { vertical-align: top; }
 table                          { border-collapse:collapse; border-spacing:0; }
-a:link, a:visited              { font:12px Tahoma, sans-serif; color:#000; text-decoration:none; }
+a:link, a:visited              { font:12px "Lato Regular", sans-serif; color:#000; text-decoration:none; }
 a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
@@ -60,7 +60,7 @@ a:hover                        { text-decoration:none; }
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .container{
-	width: 1170px;
+	max-width: 1170px;
 	margin: 0 auto;
 	padding: 24px 0 22px;
 	overflow: hidden;
@@ -84,6 +84,7 @@ a:hover                        { text-decoration:none; }
 .main-nav{
 	overflow: hidden;
 	text-align: center;
+	line-height: 1.5;
 }
 
 .main-nav li{
@@ -93,6 +94,7 @@ a:hover                        { text-decoration:none; }
 .main-nav a{
 	padding: 0 18px;
 	color: #fff;
+	font-size: 17px;
 }
 
 .main-nav a:hover{
@@ -106,12 +108,18 @@ a:hover                        { text-decoration:none; }
 .autorization ul{
 	border:1px solid #fff;
 	border-radius: 4px;
-	padding: 5px 20px;
+	padding: 5px 10px;
 }
 
 .autorization li{
 	display: inline-block;
 	color:#fff;
+	border-right: 1px solid #63707c;
+	padding: 0 5px;
+}
+.autorization li:last-child{
+	border: none;
+	padding-right: 0;
 }
 
 .autorization li a{
@@ -121,7 +129,7 @@ a:hover                        { text-decoration:none; }
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .content{
-	padding: 70px;
+	padding: 70px 0 0;
 }
 
 .post{
