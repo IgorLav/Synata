@@ -2,7 +2,7 @@
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:12px Tahoma, sans-serif; background:#fff; color:#000; }
+body                            { padding:0; margin:0; font:12px "Lato Regular", sans-serif; background:#fff; color:#2f4050; }
 div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,legend,label,select,input,textarea, header, nav, section, article, aside, footer, main {
 	padding:0;
 	margin:0;
@@ -122,8 +122,12 @@ a:hover                        { text-decoration:none; }
 	padding-right: 0;
 }
 
-.autorization li a{
+.autorization a{
 	color: #fff;
+}
+
+.autorization a:hover{
+	color: #fcb539;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
@@ -132,18 +136,60 @@ a:hover                        { text-decoration:none; }
 	padding: 70px 0 0;
 }
 
-.post{
-	overflow: hidden;
-	padding: 110px 0;
-}
- 
-.post-content{
-	width: 70%;
+.btn{
+	border-radius: 4px;
+	padding: 10px 30px 10px 23px;
+	font-size: 18px;
+	text-transform: uppercase;
+	background: #fcb539;
 }
 
-.post-icon{
-	width: 30%;
+ul > li:before{
+	content:"";
+	display: inline-block;
+	border-radius: 50%;
+
 }
+
+.txt-tpl h2{
+	font:30px "Lato Bold", sans-serif;
+	text-transform: uppercase;
+	padding: 0 0 55px;
+}
+
+.txt-tpl .post{
+	overflow: hidden;
+	padding: 110px 0;
+	font-size: 18px;
+	background: url("../img/content/line.png") center bottom no-repeat;
+	line-height: 1.5;
+ }
+
+.txt-tpl .post-content{
+	width: 60%;
+	float: right;
+}
+
+.txt-tpl .post-icon{
+	width: 40%;
+	float: left;
+	text-align: center;
+	overflow: hidden;
+}
+
+.txt-tpl .post:nth-child(even) .post-icon{
+	float: right;
+}
+
+.txt-tpl .post img{
+	display: inline-block;
+}
+
+a.btn{
+	color: #fff;
+	position: relative; 
+}
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
