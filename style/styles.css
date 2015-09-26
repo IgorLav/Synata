@@ -59,6 +59,15 @@ a:hover                        { text-decoration:none; transition: 0.2s;}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.wrapper{
+    min-height: 100%;
+}
+.wrapper:after{
+    content: "";
+    display: block;
+    height: 262px;
+    margin-bottom: -262px;
+}
 .container{
 	max-width: 1110px;
 	margin: 0 auto;
@@ -84,12 +93,12 @@ a:hover                        { text-decoration:none; transition: 0.2s;}
 .main-nav{
 	overflow: hidden;
 	text-align: center;
-	padding: 9px 0 0;
+	padding: 6px 0 0;
 }
 
 .main-nav li{
-	display: inline-block;
-	margin: 0 27px 0 22px;
+	display: inline-table;
+	margin: 0 29px 0 23px;
 	padding: 0 0 6px;
 }
 
@@ -112,20 +121,21 @@ a:hover                        { text-decoration:none; transition: 0.2s;}
 
 .autorization ul{
 	border:1px solid #fff;
-	border-radius: 4px;
-	padding: 8px 10px;
-	margin: 0 65px 0 0;
+	border-radius: 5px;
+    padding: 6px 21px 8px;
+	margin: 0 5px 0 0;
 }
 
 .autorization li{
 	display: inline-block;
 	color:#fff;
 	border-right: 1px solid #63707c;
-	padding: 0 7px 0 11px;
+	padding-right: 9px;
 }
 .autorization li:last-child{
 	border: none;
 	padding-right: 0;
+    padding-left: 6px;
 }
 
 .autorization a{
@@ -140,12 +150,12 @@ a:hover                        { text-decoration:none; transition: 0.2s;}
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .content{
-	padding: 101px 0 135px;
+	padding: 101px 0 134px;
 }
 
 .content ul > li{
 	position: relative;
-	padding: 0 0 0 30px;
+	padding: 0 0 0 33px;
 	background: url(../img/content/dote.png) 6px 6px no-repeat;
 }
 
@@ -271,6 +281,9 @@ a.btn{
     font: 300 14px/23px Lato, sans-serif;
     color: #ffffff;
 }
+.footer-col a:hover{
+    color: #fcb539;
+}
 
 .footer-bottom{
     background: #203142;
@@ -296,6 +309,14 @@ a.btn{
     -webkit-border-radius: 18px;
     -moz-border-radius: 18px;
     border-radius: 18px;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -ms-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+.social-list li:hover{
+    opacity: 0.8;
 }
 .social-list a{
     display: block;
@@ -318,7 +339,7 @@ a.btn{
     font: 700 16px Lato;
     color: #ffffff;
 }
-.footer-nav a:hover {
+.footer-nav a:hover{
     color: #fcb539;
 }
 /*----------------------------------------------------------------------------------*/
