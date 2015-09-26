@@ -21,8 +21,13 @@ input[type=submit]             { cursor:pointer; }
 img, fieldset                  { border:0; }
 img                            { vertical-align: top; }
 table                          { border-collapse:collapse; border-spacing:0; }
-a:link, a:visited              { font:12px "Lato", sans-serif; color:#000; text-decoration:none; transition: 0.3s; }
-a:hover                        { text-decoration:none; transition: 0.2s;}
+a:link, a:visited              { font:12px "Lato", sans-serif; color:#000; text-decoration:none; }
+a:hover                        { text-decoration:none;
+                                -webkit-transition-duration: 0.2s;
+                                -moz-transition-duration: 0.2s;
+                                -ms-transition-duration: 0.2s;
+                                -o-transition-duration: 0.2s;
+                                transition-duration: 0.2s;}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
 /*----------------------------------------------------------------------------------*/
