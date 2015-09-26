@@ -2,7 +2,7 @@
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:12px "Lato Regular", sans-serif; background:#fff; color:#2f4050; }
+body                            { padding:0; margin:0; font:12px Lato, sans-serif; background:#fff; color:#2f4050; }
 div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,legend,label,select,input,textarea, header, nav, section, article, aside, footer, main {
 	padding:0;
 	margin:0;
@@ -21,7 +21,7 @@ input[type=submit]             { cursor:pointer; }
 img, fieldset                  { border:0; }
 img                            { vertical-align: top; }
 table                          { border-collapse:collapse; border-spacing:0; }
-a:link, a:visited              { font:12px "Lato Regular", sans-serif; color:#000; text-decoration:none; transition: 0.3s; }
+a:link, a:visited              { font:12px "Lato", sans-serif; color:#000; text-decoration:none; transition: 0.3s; }
 a:hover                        { text-decoration:none; transition: 0.2s;}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
@@ -49,7 +49,7 @@ a:hover                        { text-decoration:none; transition: 0.2s;}
     -webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 100%;
-	max-width: 1170px;
+	max-width: 1110px;
 	margin: 0 auto;
 }
 /*----------------------------------------------------------------------------------*/
@@ -60,7 +60,7 @@ a:hover                        { text-decoration:none; transition: 0.2s;}
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .container{
-	max-width: 1170px;
+	max-width: 1110px;
 	margin: 0 auto;
 	padding: 24px 30px 22px;
 	overflow: hidden;
@@ -121,7 +121,7 @@ a:hover                        { text-decoration:none; transition: 0.2s;}
 	display: inline-block;
 	color:#fff;
 	border-right: 1px solid #63707c;
-	padding: 0px 7px 0px 11px;
+	padding: 0 7px 0 11px;
 }
 .autorization li:last-child{
 	border: none;
@@ -154,8 +154,7 @@ a:hover                        { text-decoration:none; transition: 0.2s;}
 }
 
 .txt-tpl h2{
-	font:36px "Lato Bold", sans-serif;
-	font-weight: bold;
+	font: 700 36px Lato, sans-serif;
 	text-transform: uppercase;
 	padding: 0 0 43px;
 }
@@ -166,7 +165,7 @@ a:hover                        { text-decoration:none; transition: 0.2s;}
 	font-size: 18px;
 	background: url("../img/content/line.png") center bottom no-repeat;
 	line-height: 1.6;
- }
+}
 
  .dynamic-data-block{
  	padding: 97px 0 108px;
@@ -234,7 +233,94 @@ a.btn{
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.footer{
+    overflow: hidden;
+    background: #2f4050;
+    color: #ffffff;
+}
 
+.footer-top{
+    padding: 18px 0 15px;
+}
+.footer-logo{
+    float: left;
+    width: 158px;
+    height: 33px;
+    overflow: hidden;
+    padding: 4px 110px 0 0;
+}
+.footer-top h3{
+    margin-bottom: 13px;
+    font: 700 16px Lato, sans-serif;
+    color: #ffffff;
+}
+
+.footer-col{
+    overflow: hidden;
+    display: inline-table;
+    padding-right: 30px;
+}
+.footer-col.col-adds{
+    min-width: 225px;
+}
+.footer-col.col-contacts{
+    min-width: 185px;
+}
+.footer-col,
+.footer-col a{
+    font: 300 14px/23px Lato, sans-serif;
+    color: #ffffff;
+}
+
+.footer-bottom{
+    background: #203142;
+}
+.copy{
+    float: left;
+    padding-top: 4px;
+    margin-right: 10px;
+    font: 300 16px Lato;
+}
+
+.social-list{
+    float: right;
+}
+.social-list li{
+    float: left;
+    overflow: hidden;
+    width: 36px;
+    height: 36px;
+    margin-left: 11px;
+    background: #fcb539;
+    text-align: center;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    border-radius: 18px;
+}
+.social-list a{
+    display: block;
+}
+.social-list .fa{
+    font-size: 20px;
+    line-height: 36px;
+    color: #203142;
+}
+
+.footer-nav{
+    padding-top: 4px;
+    text-align: center;
+}
+.footer-nav li{
+    display: inline-table;
+    margin: 0 22px;
+}
+.footer-nav a{
+    font: 700 16px Lato;
+    color: #ffffff;
+}
+.footer-nav a:hover {
+    color: #fcb539;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
