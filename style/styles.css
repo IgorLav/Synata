@@ -90,7 +90,7 @@ a:hover                        { text-decoration:none; transition: 0.2s;}
 .main-nav li{
 	display: inline-block;
 	margin: 0 27px 0 22px;
-	padding: 0 0 8px;
+	padding: 0 0 6px;
 }
 
 .main-nav a{
@@ -113,15 +113,15 @@ a:hover                        { text-decoration:none; transition: 0.2s;}
 .autorization ul{
 	border:1px solid #fff;
 	border-radius: 4px;
-	padding: 5px 10px;
-	margin: 0 66px 0 0;
+	padding: 8px 10px;
+	margin: 0 65px 0 0;
 }
 
 .autorization li{
 	display: inline-block;
 	color:#fff;
 	border-right: 1px solid #63707c;
-	padding: 3px 11px;
+	padding: 0px 7px 0px 11px;
 }
 .autorization li:last-child{
 	border: none;
@@ -140,14 +140,17 @@ a:hover                        { text-decoration:none; transition: 0.2s;}
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .content{
-	padding: 180px 0 135px;
+	padding: 101px 0 135px;
 }
 
 .content ul > li{
 	position: relative;
 	padding: 0 0 0 30px;
 	background: url(../img/content/dote.png) 6px 6px no-repeat;
+}
 
+.txt-tpl .post ol > li{
+	margin: 0 0 4px;
 }
 
 .txt-tpl h2{
@@ -159,11 +162,26 @@ a:hover                        { text-decoration:none; transition: 0.2s;}
 
 .txt-tpl .post{
 	overflow: hidden;
-    padding: 20px 0 75px;
     margin: 0 0 70px;
 	font-size: 18px;
 	background: url("../img/content/line.png") center bottom no-repeat;
 	line-height: 1.6;
+ }
+
+ .dynamic-data-block{
+ 	padding: 97px 0 108px;
+ }
+
+ .content-recomend-block{
+ 	padding: 30px 0 118px;
+ }
+
+ .modern-enterprises-block{
+	padding: 37px 0 125px
+ }
+
+ .security-block{
+ 	padding: 40px 0 133px;
  }
 
 .txt-tpl .post-content{
@@ -200,6 +218,7 @@ a:hover                        { text-decoration:none; transition: 0.2s;}
 
 a.btn{
 	position: relative; 
+	display: inline-block;
 	border-radius: 4px;
 	background: #fcb539;
 	color: #fff;
