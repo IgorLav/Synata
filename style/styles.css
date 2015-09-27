@@ -152,6 +152,7 @@ a:hover                        { text-decoration:none;
 /*-------------------------------------HOME-----------------------------------------*/
 .jumbutron{
     background: url(../img/content/banner.jpg);
+    background-size: cover;
     text-align: center;
     height: 663px;
     overflow: hidden;
