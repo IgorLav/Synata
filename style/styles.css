@@ -263,7 +263,6 @@ section.testimonial{
     padding: 0;
     background: #203241;
     color: #ffffff;
-
 }
 .testimonial:after{
     content: "";
@@ -289,6 +288,7 @@ section.testimonial{
 .testimonial p{
     margin-bottom: 36px;
     font: 400 20px/1.5 Lato;
+    color: #ffffff;
 }
 
 .author-box{
@@ -299,6 +299,7 @@ section.testimonial{
     overflow: hidden;
     font: 300 18px/1.5 Lato;
     font-style: italic;
+    color: #ffffff;
 }
 .author-name{
     display: block;
