@@ -257,6 +257,90 @@ a:hover                        { text-decoration:none;
 .box .try-btn{
     padding: 10px 44px 10px 50px;
 }
+
+section.testimonial{
+    position: relative;
+    padding: 0;
+    background: #203241;
+    border-bottom: 3px solid red;
+    color: #ffffff;
+
+}
+.testimonial:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    height: 100%;
+    width: 50%;
+    background: url("../img/content/browser.png") no-repeat left bottom;
+}
+.testimonial .container{
+    padding-top: 0;
+    padding-bottom: 106px;
+}
+
+.testimonial .big-box:first-child{
+    height: auto;
+    padding: 160px 0 0;
+    margin-left: 0;
+    text-align: left;
+}
+.testimonial p{
+    margin-bottom: 36px;
+    font: 400 20px/1.5 Lato;
+}
+
+.author-box{
+    overflow: hidden;
+    margin-bottom: 46px;
+}
+.author-box p{
+    overflow: hidden;
+    font: 300 18px/1.5 Lato;
+    font-style: italic;
+}
+.author-name{
+    display: block;
+    padding-top: 11px;
+    margin-bottom: 1px;
+    font: 400 22px/1.5 Lato;
+    font-style: italic;
+}
+.author-img{
+    overflow: hidden;
+    float: left;
+    height: 84px;
+    width: 84px;
+    padding: 1px;
+    margin-right: 19px;
+    border-radius: 45px;
+    border: 1px solid #F3B039;
+    text-align: center;
+}
+.author-img img{
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+a.btn-dwnld{
+    display: inline-block;
+    min-width: 213px;
+    padding: 15px 10px;
+    font: 400 16px Helvetica, Lato;
+    border: 1px solid #63707A;
+    border-radius: 4px;
+    text-align: center;
+    color: #fcb539;
+}
+a.btn-dwnld:hover{
+    background: #fcb539;
+    border-color: #fcb539;
+    color: #ffffff;
+}
+
 .resourses{
     text-align: center;
 }
@@ -561,3 +645,7 @@ section h2{
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.half-wrap{
+    display: block;
+    width: 50%;
+}
