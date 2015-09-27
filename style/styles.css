@@ -304,26 +304,37 @@ section h2{
 .resourses h2{
     margin: 0 0 82px;
 }
-.offers{
+.content .offers{
     text-align: center;
 }
 .offers .heading{
-    padding: 92px 0 85px;
+    padding: 0 0 10px;
 }
 .offers .box{
     width: 346px;
     height: 115px;
-    padding: 0 12px 88px;
+    padding: 0 12px 102px;
 }
-
 .offers .top-section h3{
     font:700 40px "Lato";
     color: #2f4050;
+    margin: 0 0 13px;
+}
+.offers .top-section p{
+    font-size: 16px;
+}
+.offers .search{
+    background: url(../img/content/arr/arr1.png) 179px 112px no-repeat;
+}
+.offers .discovery{
+    background: url(../img/content/arr/arr2.png) 179px 109px no-repeat;
+}
+.offers .integration{
+    background: url(../img/content/arr/arr3.png) 80px 107px no-repeat;
 }
 .offers .heading img{
-    margin:0 0 17px;
+    margin:0 0 13px;
 }
-
 .offers .heading p{
     width: 290px;
     margin: 0 auto;
@@ -333,13 +344,48 @@ section h2{
     overflow: hidden;
 }
 .offers .section-bottom > div{
+    position: relative;
     width: 275px;
     float: left;
     height: 280px
 }
 .offers .section-bottom .btn{
-    padding: 10px 20px;
+    padding: 12px 20px;
     background: #fcb539;
+    font-size: 16px;
+}
+.arr-bottom-section{
+    height: 85px;
+    position: relative;
+}
+.offers .arr{
+    position: absolute;
+    top: 25px;
+    display: inline-block;
+}
+.offers .mobile-arr{
+    left: 206px;
+    background: url(../img/content/arr/arr4.png) no-repeat;
+    width: 130px;
+    height: 85px;
+}
+.offers .web-app-arr{
+    left: 449px;
+    background: url(../img/content/arr/arr5.png) no-repeat;
+    width: 50px;
+    height: 83px;
+}
+.offers .zendesk-arr{
+    right: 349px;
+    background: url(../img/content/arr/arr6.png) no-repeat;
+    width: 130px;
+    height: 85px;
+}
+.offers .service-cloud-arr{
+    right: 175px;
+    background: url(../img/content/arr/arr7.png) no-repeat;
+    width: 130px;
+    height: 85px;
 }
 .offers .icon-wrap{
     width: 100%;
