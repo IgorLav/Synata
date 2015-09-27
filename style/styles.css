@@ -167,7 +167,23 @@ a:hover                        { text-decoration:none;
 .jumbutron p{
     font: 300 26px "Lato";
     color: #fff;
-    margin: 0 0 90px;
+    margin: 0 0 77px;
+}
+.home-head-btn{
+    text-align: center;
+}
+.home-head-btn li{
+    overflow: hidden;
+    display: inline-table;
+    margin: 0 11px;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -ms-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
 }
 .btn{
     position: relative;
@@ -176,16 +192,21 @@ a:hover                        { text-decoration:none;
     padding: 15px 40px;
     border: 1px solid #fff;
 }
-.jumbutron .btn{
-    font: bold 20px "Lato";
+.home-head-btn a{
+    display: block;
+    font: 600 20px "Lato";
+    padding: 15px 40px;
 }
-.btn:hover{
+.home-head-btn li:hover{
     background: #fcb539;
     border-color: #fcb539;
 }
-.jumbutron .more-btn{
-    margin: 0 0 0 22px;
-    padding: 16px 25px;
+.home-head-btn .more-btn{
+    position: relative;
+    top: -2px;
+}
+.home-head-btn .more-btn a{
+    padding: 17px 25px 16px;
     font-size: 17px;
 }
 .content .partners{
@@ -229,13 +250,12 @@ a:hover                        { text-decoration:none;
     height: 164px;
 }
 .content h3{
-    font: 25px "Lato";
+    font: 25px/1.5 "Lato";
     color: #2d2d2d;
     margin: 0 0 30px;
 }
 .box p {
-    font: 300 18px "Lato";
-    line-height: 1.5;
+    font: 300 18px/1.7 "Lato";
     margin: 0 0 50px;
 }
 .box .btn{
@@ -362,7 +382,7 @@ a.btn-dwnld:hover{
 .platform-info p{
     margin: 0 0 29px;
     text-align: left;
-    font: 16px "Lato";
+    font: 16px/28px "Lato";
     width: 660px;
     color: #fff;
 }
@@ -591,6 +611,9 @@ section h2{
 .footer{
     overflow: hidden;
     background: #2f4050;
+    color: #ffffff;
+}
+.footer p{
     color: #ffffff;
 }
 
