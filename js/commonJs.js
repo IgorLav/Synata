@@ -16,12 +16,24 @@ $(document).ready( function(){
    	   else if ( $(".zend").hasClass("active") ){
    	   		$(".arr-bottom-section span").removeClass("active");
    	   		$(".zendesk-arr").addClass("active");
-		}  
+		}
 		else if( $(".service-cloud").hasClass("active") ){
 			$(".arr-bottom-section span").removeClass("active");
 			$(".service-cloud-arr").addClass("active");
-		}   		
+		}
    	});
-   
+
+    $(document).on("scroll", function(){
+        var header = $('.header');
+
+        if($(window).scrollTop() > 570) {
+            header
+                .css({'background':'#2f4050'})
+        }
+        else if($(window).scrollTop() <= 570) {
+            header
+                .css({'background':'transparent'})
+        }
+    });
 });
 

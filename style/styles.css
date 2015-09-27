@@ -75,7 +75,7 @@ a:hover                        { text-decoration:none;
     margin-bottom: -262px;
 }
 .container{
-	max-width: 1110px;
+	width: 1110px;
 	margin: 0 auto;
 	padding: 24px 30px 22px;
 	overflow: hidden;
@@ -87,6 +87,9 @@ a:hover                        { text-decoration:none;
     position: fixed;
     background: #2f4050;
     z-index: 500;
+}
+.home .header{
+    background: transparent;
 }
 
 .main-logo{
@@ -210,7 +213,7 @@ a:hover                        { text-decoration:none;
     font-size: 17px;
 }
 .content .partners{
-    padding-bottom: 19px;
+    padding: 68px 0 50px;
     border-bottom: 1px solid #e2e2e2;
 }
 .partner-list {
@@ -218,18 +221,22 @@ a:hover                        { text-decoration:none;
 }
 .partner-list li{
     display: inline-block;
-    margin: 0 23px;
+    margin: 0 24px;
     position: relative;
     height: 82px;
 }
-.partner-list li img{
-    position: relative;
-    display: block;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
+.drive{top: -2px;}
+.gcal{top: -4px;}
+.box-partner{top: -3px;}
+.slack{top: -3px;}
+.office365{top: 5px;}
+.dropbox{top: 6px;}
+.zendesk{top: -2px;}
+.sharepoint{top: 10px;}
+.confluence{top: 11px;}
+.jira{top: -3px;}
+.exchange{top: 7px;}
+.salesforce{top: -12px;}
 .content > section{
     padding: 90px 0 0;
 }
@@ -246,8 +253,8 @@ a:hover                        { text-decoration:none;
     text-align: center;
 }
 .box img{
+    position: relative;
     margin: 0 0 36px;
-    height: 164px;
 }
 .content h3{
     font: 25px/1.5 "Lato";
@@ -278,6 +285,32 @@ a:hover                        { text-decoration:none;
     padding: 10px 44px 10px 50px;
 }
 
+section.advantages{
+    padding: 76px 0 109px;
+}
+.advantages h3{
+    margin-bottom: 18px;
+}
+.advantages .box-wrap{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.advantages .box{
+    float: none;
+    display: table-cell;
+    padding-bottom: 46px;
+}
+.advantages img{
+    margin-bottom: 50px;
+}
+.advantages .powerful-search{
+    top: 11px;
+}
+.advantages .mobile-workforce{
+    top: 6px;
+}
+
 section.testimonial{
     position: relative;
     padding: 0;
@@ -300,6 +333,8 @@ section.testimonial{
 }
 
 .testimonial .big-box:first-child{
+    position: relative;
+    z-index: 1;
     height: auto;
     padding: 160px 0 0;
     margin-left: 0;
@@ -361,28 +396,29 @@ a.btn-dwnld:hover{
     color: #ffffff;
 }
 
-.resourses{
+section.resourses{
+    padding: 85px 0 123px;
     text-align: center;
 }
 .content .platform-info{
     background: #203241;
     color: #fff;
     text-align: center;
-    padding: 67px 0 120px;
+    padding: 65px 0 123px;
 }
 .platform-info h2{
-    padding: 0 0 82px;
+    padding: 0 0 77px;
     color: #fff;
 }
 .platform-info .section-content{
     border-left: 1px solid #fcb539;
-    padding: 0 0 0 30px;
+    padding: 0 0 0 32px;
     margin: 0 0 0 212px;
 }
 .platform-info p{
-    margin: 0 0 29px;
+    margin: 0 0 18px;
     text-align: left;
-    font: 16px/28px "Lato";
+    font: 16px/29px "Lato";
     width: 660px;
     color: #fff;
 }
@@ -406,14 +442,23 @@ section h2{
     margin: 0 30px 0 -30px;
 }
 .resourses h2{
-    margin: 0 0 82px;
+    margin: 0 0 86px;
+}
+.resourses h3{
+    margin-bottom: 25px;
+}
+.resourses img{
+    margin-bottom: 34px;
+}
+.resourses .big-box{
+    padding-bottom: 115px;
 }
 .content .offers{
+    padding-top: 55px;
     text-align: center;
-    padding-bottom: 70px;
 }
 .offers .heading{
-    padding: 0 0 10px;
+    padding: 0 0 6px;
 }
 .offers .box{
     width: 346px;
@@ -423,35 +468,36 @@ section h2{
 .offers .top-section h3{
     font:700 40px "Lato";
     color: #2f4050;
-    margin: 0 0 13px;
+    margin: 0 0 15px;
 }
 .offers .top-section p{
+    font-weight: 400;
     font-size: 16px;
 }
 .offers .search{
-    background: url(../img/content/arr/arr1.png) 179px 112px no-repeat;
+    background: url(../img/content/arr/arr1.png) 179px 115px no-repeat;
 }
 .offers .discovery{
-    background: url(../img/content/arr/arr2.png) 179px 109px no-repeat;
+    background: url(../img/content/arr/arr2.png) 179px 112px no-repeat;
 }
 .offers .integration{
-    background: url(../img/content/arr/arr3.png) 80px 107px no-repeat;
+    background: url(../img/content/arr/arr3.png) 80px 112px no-repeat;
 }
 .offers .heading img{
-    margin:0 0 13px;
+    margin:0 0 15px;
 }
 .offers .heading p{
     width: 290px;
     margin: 0 auto;
-    font: bold 17px "Lato";
+    font: 700 17px/22px "Lato";
 }
 .offers .section-bottom{
     overflow: hidden;
+    padding-bottom: 97px;
 }
 .offers .section-bottom > div{
     position: relative;
     width: 275px;
-    height: 333px;
     float: left;
     height: 280px
 }
@@ -516,9 +562,10 @@ section h2{
 .icon-wrap .zendesk{
     height: 37px;
     width: 159px;
-    background-position: -4px -250px;
+    background-position: -4px -251px;
 }
 .icon-wrap .service-cloud{
+    top: 71px;
     height: 88px;
     width: 125px;
     background-position: -160px -104px;
@@ -541,7 +588,7 @@ section h2{
     background-position: -84px -7px;
 }
 .active .icon-wrap .zendesk{
-    background-position: -4px -213px;
+    background-position: -3px -214px;
 }
 .active .icon-wrap .service-cloud{
     background-position: -182px -200px;
@@ -553,12 +600,14 @@ section h2{
     background: url(../img/content/arr/arr4h.png) no-repeat;
 }
 .arr-bottom-section .web-app-arr.active{
+    left: 453px;
     background: url(../img/content/arr/arr5h.png) no-repeat;
 }
 .arr-bottom-section .zendesk-arr.active{
     background: url(../img/content/arr/arr6h.png) no-repeat;
 }
 .arr-bottom-section .service-cloud-arr.active{
+    right: 172px;
     background: url(../img/content/arr/arr7h.png) no-repeat;
 }
 .offers h4{
