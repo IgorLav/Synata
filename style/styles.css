@@ -390,6 +390,7 @@ section h2{
 }
 .content .offers{
     text-align: center;
+    padding-bottom: 70px;
 }
 .offers .heading{
     padding: 0 0 10px;
@@ -430,6 +431,7 @@ section h2{
 .offers .section-bottom > div{
     position: relative;
     width: 275px;
+    height: 333px;
     float: left;
     height: 280px
 }
@@ -474,6 +476,8 @@ section h2{
 .offers .icon-wrap{
     width: 100%;
     height: 130px;
+    margin: 0 0 32px;
+    cursor: pointer;
 }
 .offers .icon{
     position: relative;
@@ -503,6 +507,39 @@ section h2{
     height: 82px;
     width: 144px;
     background-position: -5px -129px;
+}
+.offers .inner-block{
+    opacity: 0;
+    transition: .5s;
+}
+.offers .active .inner-block{
+    opacity: 1;
+    transition: .5s;
+}
+
+.active .icon-wrap .mobile{
+    background-position: -84px -7px;
+}
+.active .icon-wrap .zendesk{
+    background-position: -4px -213px;
+}
+.active .icon-wrap .service-cloud{
+    background-position: -182px -200px;
+}
+.active .icon-wrap .web-app{
+    background-position: -160px -9px;;
+}
+.arr-bottom-section .active .mobile-arr{
+    background: url(../img/content/arr/arr4h.png) no-repeat;
+}
+.arr-bottom-section .active .web-app-arr{
+    background: url(../img/content/arr/arr5h.png) no-repeat;
+}
+.arr-bottom-section .active .zendesk-arr{
+    background: url(../img/content/arr/arr6h.png) no-repeat;
+}
+.arr-bottom-section .active .service-cloud-arr{
+    background: url(../img/content/arr/arr7h.png) no-repeat;
 }
 .offers h4{
     font: 700 25px "Lato";
@@ -638,6 +675,10 @@ section h2{
     padding-top: 4px;
     margin-right: 10px;
     font: 300 16px Lato;
+}
+
+.footer p{
+    color: #fff;
 }
 
 .social-list{
