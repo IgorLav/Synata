@@ -24,7 +24,7 @@ $(document).ready( function(){
    	});
 
     $(document).on("scroll", function(){
-        var header = $('.header');
+        var header = $('.home .header');
 
         if($(window).scrollTop() > 570) {
             header
