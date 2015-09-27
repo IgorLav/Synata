@@ -531,6 +531,9 @@ section h2{
     margin: 0 0 27px;
 }
 /*----------------------------------------------------------------------------------*/
+.txt-tpl p{
+    color: #2f4050;
+}
 .txt-tpl .content{
     padding: 101px 0 134px;
     width: 100%;
@@ -547,14 +550,14 @@ section h2{
 .txt-tpl h2{
     font: 700 36px Lato, sans-serif;
     text-transform: uppercase;
-    padding: 0 0 43px;
+    padding: 0 0 38px;
 }
 .txt-tpl .post{
     overflow: hidden;
     margin: 0 0 70px;
     font-size: 18px;
     background: url("../img/content/line.png") center bottom no-repeat;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 .dynamic-data-block{
     padding: 97px 0 108px;
@@ -714,7 +717,6 @@ section h2{
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.half-wrap{
-    display: block;
-    width: 50%;
+.mar-bot-14{
+    margin-bottom: 14px;
 }
