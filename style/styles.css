@@ -9,6 +9,7 @@ div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,
     outline:none;
     list-style:none;
 }
+p{ color: #2d2d2d}
 header, nav, section, article, aside, footer, main {
     display: block;
     width: 100%;
@@ -170,6 +171,7 @@ a:hover                        { text-decoration:none;
 }
 .btn{
     position: relative;
+    display: inline-block;
     border-radius: 6px;
     padding: 15px 40px;
     border: 1px solid #fff;
@@ -278,6 +280,7 @@ a:hover                        { text-decoration:none;
     text-align: left;
     font: 16px "Lato";
     width: 660px;
+    color: #fff;
 }
 section h2{
     font: 35px "Lato";
@@ -300,6 +303,82 @@ section h2{
 }
 .resourses h2{
     margin: 0 0 82px;
+}
+.offers{
+    text-align: center;
+}
+.offers .heading{
+    padding: 92px 0 85px;
+}
+.offers .box{
+    width: 346px;
+    height: 115px;
+    padding: 0 12px 88px;
+}
+
+.offers .top-section h3{
+    font:700 40px "Lato";
+    color: #2f4050;
+}
+.offers .heading img{
+    margin:0 0 17px;
+}
+
+.offers .heading p{
+    width: 290px;
+    margin: 0 auto;
+    font: bold 17px "Lato";
+}
+.offers .section-bottom{
+    overflow: hidden;
+}
+.offers .section-bottom > div{
+    width: 275px;
+    float: left;
+    height: 280px
+}
+.offers .section-bottom .btn{
+    padding: 10px 20px;
+    background: #fcb539;
+}
+.offers .icon-wrap{
+    width: 100%;
+    height: 130px;
+}
+.offers .icon{
+    position: relative;
+    display: inline-block;
+    background: url(../img/content/spritesheet.png) no-repeat;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.icon-wrap .mobile{
+    height: 105px;
+    width: 56px;
+    background-position: -5px -7px;
+}
+.icon-wrap .zendesk{
+    height: 37px;
+    width: 159px;
+    background-position: -4px -250px;
+}
+.icon-wrap .service-cloud{
+    height: 88px;
+    width: 125px;
+    background-position: -160px -104px;
+}
+.icon-wrap .web-app{
+    height: 82px;
+    width: 144px;
+    background-position: -5px -129px;
+}
+.offers h4{
+    font: 700 25px "Lato";
+    color: #2d2d2d;
+    overflow: hidden;
+    margin: 0 0 27px;
 }
 /*----------------------------------------------------------------------------------*/
 .txt-tpl .content{
