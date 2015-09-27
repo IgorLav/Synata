@@ -717,12 +717,17 @@ section h2{
 .form-section fieldset li{
     display: inline-block; 
     margin: 0 26px 0 0;
+    text-align: center;
 }
-.form-section input{
+.form-section input,
+.form-section select{
     padding: 18px;
     border-radius: 3px;
     width: 216px;
     border: 1px solid #d6d6d6;
+    margin: 0 0 22px;
+    display: inline-block;
+
 
     ::-webkit-input-placeholder {color:#cbccd1; }
     ::-moz-placeholder          {color:#cbccd1; }
@@ -747,6 +752,37 @@ section h2{
 .request-page .content > section{ 
     padding: 0;
 }
+.comment-field{
+    display: block;
+    overflow: hidden;
+    width: 325px;
+    border: 1px solid #d6d6d6;
+}
+.comment-field:focus,
+.form-section select:focus {
+    border: 1px solid #fcb539;
+}
+.comment-field textarea{
+    padding: 10px 30px 10px 23px;
+    border: none;
+}
+.form-section .stage-2 ul{
+    padding: 117px;
+    width: 360px;
+    margin: 0 auto;
+}
+.form-section .stage-2 li,
+ .form-section .stage-2 label,
+ .form-section .stage-2 textarea{
+    display: block;
+    margin: 0 auto;
+}
+.form-section label {
+    font-size: 16px;
+    color:#d8d9db;
+    padding: 0px 0 13px;
+}
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
