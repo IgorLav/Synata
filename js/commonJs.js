@@ -23,6 +23,7 @@ $(document).ready( function(){
 		}
    	});
 
+   //home-header opacity
     $(document).on("scroll", function(){
         var header = $('.home .header');
 
