@@ -48,9 +48,9 @@ if (array_key_exists('send', $_POST)) {
                     </div>
 
                     <ul class="main-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Landing page</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="request-demo.php">Request a Demo</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                     </ul>
                 </nav>
             </div><!--/container-->
