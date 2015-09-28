@@ -656,7 +656,7 @@ section h2{
     line-height: 1.7;
 }
 .dynamic-data-block{
-    padding: 97px 0 108px;
+    padding: 94px 0 108px;
 }
 .content-recomend-block{
     padding: 30px 0 118px;
@@ -686,11 +686,24 @@ section h2{
     float: left;
 }
 .txt-tpl .post img{
+    position: relative;
     display: inline-block;
 }
 .txt-tpl .icon-indent{
-    position: relative;
-    top: 60px;
+    top: 49px;
+    left: -2px;
+}
+.txt-tpl .icon-recomend{
+    left: -14px;
+    top: -2px;
+}
+.txt-tpl .icon-enterprises{
+    top: 37px;
+    left: 1px;
+}
+.txt-tpl .icon-security{
+    top: 12px;
+    left: -2px;
 }
 .txt-tpl .btn{
     display: inline-block;
