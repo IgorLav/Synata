@@ -58,10 +58,10 @@ a:hover                        { text-decoration:none;
     box-sizing: border-box;
     margin: 0 auto;
 }
-/*----------------------------------------------------------------------------------*/
-/*-------------------------------------FONTS----------------------------------------*/
-/*----------------------------------------------------------------------------------*/
-
+input::-webkit-input-placeholder {color:#b5b7bf; }
+input::-moz-placeholder          {color:#b5b7bf; }
+input:-moz-placeholder           {color:#b5b7bf; }
+input:-ms-input-placeholder      {color:#b5b7bf; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -693,55 +693,60 @@ section h2{
 .request-page .jumbutron{
     text-align: center;
     background: transparent;
-    padding: 127px 0 142px;
+    padding: 133px 0 137px;
     height: 400px;
 }
 .request-page .jumbutron img{
-    margin: 0 0 50px;
+    margin: 0 0 48px;
 }
 .request-page .jumbutron h1{
-    font: 36px "Lato";
+    font: 400 36px/1.5 "Lato";
     color: #2c2c2c;
     padding: 5px;
+    margin-bottom: 33px;
 }
 .request-page .jumbutron p{
     width: 515px;
     color: #282828;
     margin: 0 auto;
-    font: 300 21px "Lato";
+    font: 400 20px/23px "Lato";
+}
+.request-page .content > .form-section{
+    padding-bottom: 70px;
 }
 .form-section fieldset ul{
-    margin: 0 -26px 0 0;
-    overflow: hidden;
+    text-align: center;
 }
 .form-section fieldset li{
-    display: inline-block; 
-    margin: 0 26px 0 0;
+    display: inline-block;
+    margin-left: 27px;
     text-align: center;
+}
+.form-section fieldset li:first-of-type{
+    margin-left: 0;
 }
 .form-section input,
 .form-section select{
-    padding: 18px;
+    padding: 0 18px;
     border-radius: 3px;
+    height: 52px;
     width: 216px;
     border: 1px solid #d6d6d6;
     margin: 0 0 22px;
     display: inline-block;
-
-
-    ::-webkit-input-placeholder {color:#cbccd1; }
-    ::-moz-placeholder          {color:#cbccd1; }
-    :-moz-placeholder           {color:#cbccd1; }
-    :-ms-input-placeholder      {color:#cbccd1; }
+    color: #2f4050;
+    font: 400 16px/16px Lato;
 }
 .form-section .btn{
+    height: 54px;
     width: 254px;
     background: #fcb539;
     text-transform: uppercase;
-    font:600 20px 'Lato';
+    font:600 18px 'Lato';
     border-right: 3px;
-    padding: 14px ;
+    padding: 0 10px;
     border: none;
+    cursor: pointer;
 }
 .form-section .btn:focus{
     border: none;
