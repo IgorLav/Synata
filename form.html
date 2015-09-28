@@ -47,13 +47,13 @@
             </div><!--/jumbutron-->
             <section class="form-section">
                 <div class="container">
-                    <form action="">
-                        <fieldset>
+                    <form action="" method="post">
+                        <fieldset class="stage-1">
                             <ul>
-                                <li><input type="text" placeholder="Full Name"></li>
-                                <li><input type="email" placeholder="Email"></li>
-                                <li><input type="text" placeholder="Company"></li>
-                                <li><input type="button" class="btn text-white" value="Next"> </li>
+                                <li><input type="text" name="name" placeholder="Full Name" required></li>
+                                <li><input type="email" name="email" placeholder="Email" required></li>
+                                <li><input type="text" name="company" placeholder="Company"></li>
+                                <li><input type="submit" class="btn text-white" value="Next"></li>
                             </ul>
                         </fieldset>
                     </form>

@@ -15,11 +15,11 @@
         <header class="header">
             <div class="container">
                 <nav class="navbar">
-                    <h1 class="main-logo">
+                    <div class="main-logo">
                         <a href="index.html">
                             <img src="img/header/logo.png" alt="Synata">Synata
                         </a>
-                    </h1>
+                    </div>
 
                     <div class="autorization">
                         <ul>
@@ -43,28 +43,21 @@
                     <form action="">
                         <fieldset class="stage-2">
                             <ul>
-                                <li><label>Numbers of employees</label><input type="number"></li>
-                                <li><label>Phone number</label><input type="phone"></li>
+                                <li><label>Numbers of employees</label><input type="number" min="0"></li>
+                                <li><label>Phone number</label><input type="tel"></li>
                                 <li><label>When is a good time to contact you?</label><input type="text"></label></li>
                                 <li><label>Which are intersted in pick list</label><input type="text"></li>
                                 <li><label>Choose all that apply</label><select name="" id="" value="select"></select></li>
                                 <li>
-                                    <label>Comment or question<label>
-                                    <span class="comment-field">
-                                        <textarea cols="40" rows="10"></textarea>
-                                    </span>
+                                    <label>Comment or question</label>
+                                    <textarea name="comment"></textarea>
                                 </li>
-                                <li><input class="btn text-white" type="submit" value="Send"></li>
+                                <li class="last"><input class="btn text-white" type="submit" value="Send"></li>
                             </ul>
                         </fieldset>
                     </form>
                 </div>
             </section>
- 
-
-
-
-
         </div><!--/content-->
     </div>
 
