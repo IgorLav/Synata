@@ -61,12 +61,51 @@
                                 </li>
                                 <li>
                                     <label for="options">Choose all that apply</label>
-                                    <select name="options" id="options">
-                                        <option disabled selected>Select</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                    </select>
+                                    <dl  name="options" id="options" class="dropdown"> 
+      
+                                        <dt>
+                                        <a class="carret"href="#">
+                                          <span class="hida">Select</span>    
+                                          <p class="multiSel"></p>  
+                                        </a>
+                                        </dt>
+                                      
+                                        <dd>
+                                            <div class="mutliSelect">
+                                                <ul>
+                                                    <li>
+                                                        <div class="checkbox inline">
+                                                            <input type="checkbox" name="synata-search" id="synata-search" value="Synata Search">
+                                                            <label for="synata-search">Synata Search</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="checkbox inline">
+                                                            <input type="checkbox" name="embed" id="embed" value="Embed">
+                                                            <label for="embed">Embed</label></li>
+                                                    <li>
+                                                        <div class="checkbox inline">
+                                                            <input type="checkbox" name="integration" id="integration" value="Integration"> 
+                                                            <label for="integration">Integration</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="checkbox inline">
+                                                            <input type="checkbox" name="box-search" id="box-search" value="Box Search" >
+                                                            <label for="box-search">Box Search</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="checkbox inline">
+                                                            <input type="checkbox" name="sforce-search" id="sforce-searc" value="Salesforce Search">
+                                                            <label for="sforce-searc">Salesforce Search</label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </dd>
+                                    </dl>
+
                                 </li>
                                 <li>
                                     <label for="comment">Comment or Question</label>
