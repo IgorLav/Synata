@@ -22,7 +22,10 @@ if (array_key_exists('send', $_POST)) {
     <title>Request a Demo</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=1170, user-scalable=yes">
-    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 9]
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <![endif]-->
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,300italic,700,700italic&amp;subset=latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style/styles.css">
@@ -63,7 +66,7 @@ if (array_key_exists('send', $_POST)) {
                 <div class="container">
                     <h1>Thank you!</h1>
                     <img src="img/content/form/success.png" alt="" width="514" height="262">
-                    <p>We’ll contact you shortly to schedule.</p>
+                    <p class="big-p">We’ll contact you shortly to schedule.</p>
                     <p>(In the meantime, <a href="#">check out our latest blog post!</a>)</p>
                     <a href="index.html" class="btn text-white">Home</a>
                 </div>
