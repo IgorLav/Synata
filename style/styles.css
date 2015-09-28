@@ -87,6 +87,11 @@ input:-ms-input-placeholder      {color:#b5b7bf; }
     position: fixed;
     background: #2f4050;
     z-index: 500;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
 }
 .home .header{
     background: transparent;
@@ -758,7 +763,7 @@ section h2{
 .form-section .btn:focus{
     border: none;
 }
-.request-page .content > section{ 
+.request-page .content > section{
     padding: 0;
 }
 .form-section .stage-2 ul{
