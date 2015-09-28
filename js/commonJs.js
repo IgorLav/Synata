@@ -27,11 +27,11 @@ $(document).ready( function(){
     $(document).on("scroll", function(){
         var header = $('.home .header');
 
-        if($(window).scrollTop() > 570) {
+        if($(window).scrollTop() > 580) {
             header
                 .css({'background':'#2f4050'})
         }
-        else if($(window).scrollTop() <= 570) {
+        else if($(window).scrollTop() <= 580) {
             header
                 .css({'background':'transparent'})
         }
