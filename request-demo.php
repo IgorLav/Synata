@@ -66,7 +66,7 @@ if (array_key_exists('send', $_POST)) {
                     <img src="img/content/form/success.png" alt="" width="514" height="262">
                     <p class="big-p">We’ll contact you shortly to schedule.</p>
                     <p>(In the meantime, <a href="#">check out our latest blog post!</a>)</p>
-                    <a href="index.html" class=" btn">Home</a>
+                    <a href="index.html" class=" btn text-white">Home</a>
                 </div>
             </div><!--/jumbutron-->
             
@@ -148,7 +148,7 @@ if (array_key_exists('send', $_POST)) {
                                     <textarea name="comment" id="comment"></textarea>
                                 </li>
                                 <li class="last">
-                                    <input class="btn name="send" id="submit" type="submit" value="Send">
+                                    <input class="btn text-white" name="send" id="submit" type="submit" value="Send">
                                 </li>
                             </ul>
                         </fieldset>
@@ -173,7 +173,7 @@ if (array_key_exists('send', $_POST)) {
                                 <li><input type="text" name="name" placeholder="Full Name" required></li>
                                 <li><input type="email" name="email" placeholder="Email" required></li>
                                 <li><input type="text" name="company" placeholder="Company"></li>
-                                <li><input type="submit" name="sent" class="btn" value="Next"></li>
+                                <li><input type="submit" name="sent" class="btn text -white" value="Next"></li>
                             </ul>
                         </fieldset>
                     </form>
