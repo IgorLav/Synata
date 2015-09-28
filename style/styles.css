@@ -185,7 +185,7 @@ input:-ms-input-placeholder      {color:#b5b7bf; }
     display: inline-table;
     margin: 0 11px;
     border-radius: 6px;
-    border: 1px solid #fff;
+    border: 1px solid #fcb539;
     cursor: pointer;
     -webkit-transition-duration: 0.2s;
     -moz-transition-duration: 0.2s;
@@ -205,7 +205,6 @@ input:-ms-input-placeholder      {color:#b5b7bf; }
     font: 600 20px "Lato";
     padding: 15px 40px;
     color: #fcb539;
-    border: 1px solid #fcb539;
 }
 .home-head-btn li:hover{
     background: #fcb539;
@@ -989,9 +988,9 @@ section h2{
     margin: 0 0 59px;
 }
 .request-page .form-success img{
-    margin: 0 0 93px;
-    width: 184px;
-    height: 145px;
+    margin: 0 0 75px;
+    width: 183px;
+    height: 163px;
 }
 .request-page .form-success p{
     font: 20px "Lato";
