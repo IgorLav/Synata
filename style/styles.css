@@ -198,23 +198,28 @@ input:-ms-input-placeholder      {color:#b5b7bf; }
     display: inline-block;
     border-radius: 6px;
     padding: 15px 40px;
-    border: 1px solid #fff;
+    border: 1px solid #fcb539;
 }
 .home-head-btn a{
     display: block;
     font: 600 20px "Lato";
     padding: 15px 40px;
+    color: #fcb539;
+    border: 1px solid #fcb539;
 }
 .home-head-btn li:hover{
     background: #fcb539;
     border-color: #fcb539;
+}
+.home-head-btn li:hover a{
+        color: #fff;
 }
 .home-head-btn .more-btn{
     position: relative;
     top: -2px;
 }
 .home-head-btn .more-btn a{
-    padding: 17px 25px 16px;
+    padding: 17px 25px;
     font-size: 17px;
 }
 .content .partners{
@@ -373,10 +378,10 @@ section.testimonial{
     float: left;
     height: 84px;
     width: 84px;
-    padding: 1px;
     margin-right: 19px;
     border-radius: 45px;
-    border: 1px solid #F3B039;
+    border: 1px solid #fcb539;
+    
     text-align: center;
 }
 .author-img img{
@@ -398,7 +403,7 @@ a.btn-dwnld{
 a.btn-dwnld:hover{
     background: #fcb539;
     border-color: #fcb539;
-    color: #ffffff;
+    color: #fff;
 }
 
 section.resourses{
