@@ -747,7 +747,7 @@ section h2{
     margin: 0;
     display: inline-block;
     color: #2f4050;
-    font: 400 16px/16px Lato;
+    font: 400 16px/16px 'Lato';
 }
 .form-section .btn{
     height: 54px;
@@ -853,7 +853,6 @@ section h2{
     display:none;
     position:absolute;
     top:8px;
-    width:307px;
     border: 1px solid #D6D6D6;
     overflow: auto;
     z-index: 100;
@@ -909,7 +908,7 @@ section h2{
     width: 15px;
     background:none;
     border:2px solid;
-    border-radius:3px; 
+    border-radius:3px;
 }
 .checkbox label:after{
     border-bottom: 2px solid #fcb539;

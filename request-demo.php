@@ -1,7 +1,25 @@
+<?php
+    $sent = $_POST['sent'];
+    $send = $_POST['send'];
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $company = $_POST['company'];
+
+if (array_key_exists('send', $_POST)) {
+   $to = 'mazurenko.ihor@gmail.com';
+   $subject = 'Request a Demo';
+   $subject = "=?utf-8?b?". base64_encode($subject) ."?=";
+   $message = "Full Name: ".$_POST['name']."\r\nEmail: ".$_POST['email']."\r\nCompany: ".$_POST['company']."\r\n\r\nNumbers of employees: ".$_POST['employees']."\r\nPhone number: ".$_POST['tell']."\r\nA good time to contact: ".$_POST['contact-time']."\r\nWhich are you interested in pick list: ".$_POST['pick-list']."\r\nChoose all that apply: ".$_POST['synata-search']."   ".$_POST['embed']."   ".$_POST['integration']."   ".$_POST['box-search']."   ".$_POST['sforce-search']."\r\nComment/Question: ".$_POST['comment'];
+   $headers = 'Content-type: text/plain; charset="utf-8"';
+   $headers .= "MIME-Version: 1.0\r\n";
+   $headers .= "Date: ". date('D, d M Y h:i:s O') ."\r\n";
+   mail($to, $subject, $message, $headers);
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Synata</title>
+    <title>Request a Demo</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=1170, user-scalable=yes">
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -38,10 +56,28 @@
         </header>
 
         <div class="content">
-            <section class="form-section">
+
+<?php if ($send){ ?>
+        
+            <div class="jumbutron form-success">
+                <div class="container">
+                    <h1>Thank you!</h1>
+                    <img src="img/content/form/success.png" alt="" width="514" height="262">
+                    <p>We’ll contact you shortly to schedule.</p>
+                    <p>(In the meantime, <a href="#">check out our latest blog post!</a>)</p>
+                    <a href="index.html" class="btn text-white">Home</a>
+                </div>
+            </div><!--/jumbutron-->
+            
+<?php } elseif ($sent){ ?>
+
+            <section class="form-section" id="form-section">
                 <div class="container">
                     <form action="" method="post">
                         <fieldset class="stage-2">
+                            <input type="hidden" name="name" value='<?php echo "$name"; ?>'>
+                            <input type="hidden" name="email" value='<?php echo "$email"; ?>'>
+                            <input type="hidden" name="company" value='<?php echo "$company"; ?>'>
                             <ul>
                                 <li>
                                     <label for="employees">Numbers of employees</label>
@@ -60,14 +96,14 @@
                                     <input type="text" id="pick-list" name="pick-list">
                                 </li>
                                 <li>
-                                    <label for="options">Choose all that apply</label>
-                                    <dl name="options" id="options" class="dropdown">
+                                    <label>Choose all that apply</label>
+                                    <dl id="options" class="dropdown"> 
       
                                         <dt>
-                                        <a class="carret" href="#">
-                                          <span class="hida">Select</span>    
-                                          <p class="multiSel"></p>  
-                                        </a>
+                                            <a class="carret" href="#">
+                                              <span class="hida">Select</span>    
+                                              <p class="multiSel"></p>
+                                            </a>
                                         </dt>
                                       
                                         <dd>
@@ -105,20 +141,46 @@
                                             </div>
                                         </dd>
                                     </dl>
-
                                 </li>
                                 <li>
                                     <label for="comment">Comment or Question</label>
                                     <textarea name="comment" id="comment"></textarea>
                                 </li>
                                 <li class="last">
-                                    <input class="btn text-white" type="submit" value="Send">
+                                    <input class="btn text-white" name="send" id="submit" type="submit" value="Send">
                                 </li>
                             </ul>
                         </fieldset>
                     </form>
                 </div>
             </section>
+
+<?php } else { ?>
+
+            <div class="jumbutron">
+                <div class="container">
+                    <img src="img/content/form/ilustr.png" alt="" width="514" height="262">
+                    <h1>Want to see what <strong>Synata</strong> could do for your team?</h1>
+                    <p>To see a personalized demo or to get a custom price quote, please fill out a form below</p>
+                </div>
+            </div><!--/jumbutron-->
+            <section class="form-section">
+                <div class="container">
+                    <form action="" method="post">
+                        <fieldset class="stage-1">
+                            <ul>
+                                <li><input type="text" name="name" placeholder="Full Name" required></li>
+                                <li><input type="email" name="email" placeholder="Email" required></li>
+                                <li><input type="text" name="company" placeholder="Company"></li>
+                                <li><input type="submit" name="sent" class="btn text-white" value="Next"></li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+
+<?php } ?>
+
         </div><!--/content-->
     </div>
 
