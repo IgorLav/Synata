@@ -39,10 +39,12 @@ $(document).ready( function(){
 
     //multiselect with check boxes
     $(".dropdown dt a").on('click', function () {
+        event.preventDefault();
           $(".dropdown dd ul").slideToggle('fast');
       });
 
       $(".dropdown dd ul li a").on('click', function () {
+          event.preventDefault();
           $(".dropdown dd ul").hide();
       });
 
