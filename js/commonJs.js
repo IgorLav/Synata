@@ -39,20 +39,12 @@ $(document).ready( function(){
 
     //multiselect with check boxes
     $(".dropdown dt a").on('click', function (event) {
-          if(event.preventDefault){
-            event.preventDefault();
-          }else{
-            event.returnValue = false; 
-          }
+        event.preventDefault();
           $(".dropdown dd ul").slideToggle('fast');
       });
 
       $(".dropdown dd ul li a").on('click', function () {
-          if(event.preventDefault){
-            event.preventDefault();
-          }else{
-            event.returnValue = false; 
-          }
+          event.preventDefault();
           $(".dropdown dd ul").hide();
       });
 
@@ -74,17 +66,14 @@ $(document).ready( function(){
           if ($(this).is(':checked')) {
               var html = '<span title="' + title + '">' + title + '</span>';
               $('.multiSel').append(html);
-               if( $(".multiselect:has(span)") ){
-                $('.hida').css('display', 'block');
-              } else {
-                $('.hida').css('display', 'none');
-              }
+              $(".hida").hide();
           } 
           else {
               $('span[title="' + title + '"]').remove();
               var ret = $(".hida");
-              $('.dropdown dt a').append(ret);
-              
+              if($('.multiSel').text() === '') {
+                $(".hida").css('display','block');
+              }
           }
       });
 

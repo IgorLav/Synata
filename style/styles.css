@@ -96,14 +96,12 @@ input:-ms-input-placeholder      {color:#b5b7bf; }
 .home .header{
     background: transparent;
 }
-
 .main-logo{
 	float: left;
 	width: 158px;
 	height: 33px;
 	overflow: hidden;
 }
-
 .main-nav{
 	overflow: hidden;
 	text-align: center;
@@ -845,26 +843,30 @@ section h2{
     overflow: hidden;
 }
 .dropdown dt a {
-    background: #fff;
     display: block;
     border: 1px solid #D6D6D6;
     border-radius: 3px;
-    padding: 0 20px 0 10px;
+    padding: 13px 32px 5px 10px;
     overflow: hidden;
-    width: 318px;
-    height: 52px;
-    line-height: 50px;
+    width: 306px;
+    min-height: 32px;
+    line-height: 15px;
     text-align: left;
+}
+.dropdown dt .hida{
+    line-height: 1.5;
 }
 .multiSelect{
     width: 350px;
 }
 .dropdown .carret{
-    background: url(../img/content/carret.png) no-repeat 312px 23px;
+    background: url(../img/content/carret.png) no-repeat 320px 23px;
+    background-color: #fff;
 }
 .dropdown dt a span, .multiSel span {
     cursor:pointer;
     display:inline-block;
+    line-height: 1.25;
     padding: 0 3px 2px 8px;
 }
 .form-section .dropdown dd ul {
