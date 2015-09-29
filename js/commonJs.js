@@ -38,13 +38,21 @@ $(document).ready( function(){
     });
 
     //multiselect with check boxes
-    $(".dropdown dt a").on('click', function () {
-        event.preventDefault();
+    $(".dropdown dt a").on('click', function (event) {
+          if(event.preventDefault){
+            event.preventDefault();
+          }else{
+            event.returnValue = false; 
+          }
           $(".dropdown dd ul").slideToggle('fast');
       });
 
       $(".dropdown dd ul li a").on('click', function () {
-          event.preventDefault();
+          if(event.preventDefault){
+            event.preventDefault();
+          }else{
+            event.returnValue = false; 
+          }
           $(".dropdown dd ul").hide();
       });
 
