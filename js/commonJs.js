@@ -74,7 +74,11 @@ $(document).ready( function(){
           if ($(this).is(':checked')) {
               var html = '<span title="' + title + '">' + title + '</span>';
               $('.multiSel').append(html);
-              $(".hida").hide();
+               if( $(".multiselect:has(span)") ){
+                $('.hida').css('display', 'block');
+              } else {
+                $('.hida').css('display', 'none');
+              }
           } 
           else {
               $('span[title="' + title + '"]').remove();
